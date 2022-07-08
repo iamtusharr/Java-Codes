@@ -39,10 +39,9 @@ public class Main {
 class Solution {
     void swapKth(int arr[], int n, int k) 
     {
-        int end_point = (arr.length - k)  ;
-        int temp = arr[k];
-        arr[k] = arr[end_point];
-        arr[end_point] = temp;
+        int temp = arr[k-1];
+        arr[k-1] = arr[n-k];
+        arr[n-k] = temp;
             
     }
 
